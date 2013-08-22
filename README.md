@@ -1,8 +1,8 @@
 #object-stream-to-fs
 
-consume a stream of objects and save them to a file.
+Consume a stream of objects and save them to a file.
 
-specify a path to the target file.
+Specify a path to the target file.
 
 [![build status](https://secure.travis-ci.org/nickpoorman/object-stream-to-fs.png)](https://travis-ci.org/nickpoorman/object-stream-to-fs)
 
@@ -11,12 +11,15 @@ specify a path to the target file.
 save objects to a file:
 
 ``` js
-var s = objectStreamToFS('/tmp/fileOut');
-s.on('finish', function(){
+var s = objectStreamToFS('/tmp/test-file');
+
+var d = dump('mongodb://127.0.0.1/test_db', 'testcollection');
+
+d.pipe(s);
+
+s.on('done', function(){
   console.log("the object stream has been consumed!")
 });
-
-objs.pipe(s);
 
 ```
 
@@ -28,9 +31,9 @@ var objectStreamToFS = require('object-stream-to-fs')
 
 ## var s = objectStreamToFS(filePath)
 
-consume the entire stream of objects.
+Consume the entire stream of objects.
 
-the returned object `s` is a [Stream](http://nodejs.org/api/stream.html). 
+The returned object `s` is a [Stream](http://nodejs.org/api/stream.html). 
 
 # events
 
