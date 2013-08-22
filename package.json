@@ -1,6 +1,6 @@
 {
   "name": "object-stream-to-fs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Stream objects to a file and store it to be read from JSONStream",
   "main": "index.js",
   "scripts": {
