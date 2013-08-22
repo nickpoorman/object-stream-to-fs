@@ -1,0 +1,1 @@
+mongo test_db --eval 'db.testcollection.insert([{"_id": 1, "name": "Jim", "gender": "male"}, {"_id": 2, "name": "Jane", "gender": "female"}, {"_id": 3, "name": "Jill", "gender": "female"}]);'

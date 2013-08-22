@@ -1,0 +1,40 @@
+{
+  "name": "object-stream-to-fs",
+  "version": "0.0.1",
+  "description": "Stream objects to a file and store it to be read from JSONStream",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "author": {
+    "name": "Nick Poorman",
+    "email": "mail@nickpoorman.com",
+    "url": "http://nickpoorman.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nickpoorman/object-stream-to-fs.git"
+  },
+  "homepage": "https://github.com/nickpoorman/object-stream-to-fs",
+  "dependencies": {
+    "inherits": "~2.0.1",
+    "JSONStream": "~0.6.4"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4",
+    "mongodb-collection-dump": "~0.2.1",
+    "JSONStream": "~0.6.4",
+    "through": "~2.3.4"
+  },
+  "keywords": [
+    "stream",
+    "object",
+    "file",
+    "fs",
+    "JSONStream",
+    "WriteStream",
+    "ReadStream",
+    "serialize"
+  ]
+}
